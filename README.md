@@ -1,30 +1,27 @@
-# React + TypeScript + Vite
+# Контрольная панель
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Проект **Контрольная панель** разработан на React с использованием MobX для управления состоянием. Приложение предназначено для отображения данных о счётчиках и управления ими.
 
-Currently, two official plugins are available:
+## Основные функции
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Отображение списка счётчиков с информацией о типе, дате установки, автоматическом режиме, текущих показаниях, адресе и примечании.
+- Возможность удаления счётчиков с автоматическим обновлением данных.
+- Пагинация для удобства просмотра большого объема данных.
 
-## Expanding the ESLint configuration
+## Технологии
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React** - основной фронтенд-фреймворк.
+- **MobX** - для управления состоянием приложения.
+- **Axios** - для выполнения HTTP-запросов к API.
+- **Vite** - для сборки и разработки проекта.
+- **GitHub Pages** - для хостинга приложения.
 
-- Configure the top-level `parserOptions` property like this:
+## Установка
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Установите зависимости:
+   ```bash
+   npm install
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Запустите локальный сервер:
+   ```bash
+   npm run dev
