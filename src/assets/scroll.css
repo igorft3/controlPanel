@@ -1,0 +1,45 @@
+.table-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.table-wrapper {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.simpleBar-lib {
+  height: 80vh;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+tfoot {
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.last-row {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
+  border-top: 1px solid #e0e5eb;
+}
+
+.simplebar-scrollbar.simplebar-visible::before {
+  opacity: 0.5;
+}
+
+.simplebar-scrollbar::before {
+  background-color: #5e6674;
+  background-color: red;
+}
